@@ -45,9 +45,9 @@ CrUX est une excellente source de données, mais elle ne contient pas certaines 
 
 ## Core Web Vitals
 
-Core Web Vitals (CWV) are user-centric metrics designed to measure the different aspects of web performance. These include the [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp), which tracks loading performance, [Interaction to Next Paint (INP)](https://web.dev/articles/inp), which measures interactivity, and [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls), which assesses visual stability.
+Les Core Web Vitals (CWV) sont des métriques centrées sur l’utilisateur, conçues pour mesurer différents aspects de la performance web. Cela inclut le [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp), qui évalue la performance de chargement, l’[Interaction to Next Paint (INP)](https://web.dev/articles/inp), qui mesure l’interactivité, et le [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls), qui examine la stabilité visuelle.
 
-Starting this year, INP has officially replaced [First Input Delay (FID)](https://web.dev/articles/fid) and became a part of the CWV. While INP measures the full delay of all interactions experienced by a user, FID only focuses on the input delay of the first interaction. This wider scope makes INP a better reflection of the full user experience.
+Depuis cette année l’INP a officiellement remplacé le [First Input Delay (FID)](https://web.dev/articles/fid) et fait désormais partie des CWV. Alors que l’INP mesure le délai total de toutes les interactions rencontrées par un utilisateur, le FID se concentre uniquement sur le délai de réponse de la première interaction. Cette portée élargie fait de l’INP un meilleur reflet de l’expérience utilisateur globale.
 
 {{ figure_markup(
   image="good-core-web-vitals-fid-devices-years.png",
@@ -59,26 +59,26 @@ Starting this year, INP has officially replaced [First Input Delay (FID)](https:
   )
 }}
 
-The replacement of the FID with the INP metric significantly impacted the percentage of websites with good CWV on mobile. This doesn't mean the user experience has worsened, just that is now reflected more accurately due to the metric update. If we still used FID as a measure of interactivity, 48% of the websites would have good CWV on mobile devices. However, with the INP metric, this figure drops to 43%. Interestingly, performance on desktop devices stays the same regardless of which responsiveness metric we use at 54%.
+Le remplacement de la métrique FID par l’INP a eu un impact significatif sur le pourcentage de sites ayant de bons CWV sur mobile. Cela ne signifie pas que l’expérience utilisateur s’est détériorée, mais qu’elle est désormais reflétée de manière plus précise grâce à la mise à jour de la métrique. Si le FID était toujours utilisé pour mesurer l’interactivité, 48 % des sites mobiles auraient de bons CWV. Cependant, avec l’INP, ce chiffre descend à 43 %. Fait intéressant, la performance des appareils de bureau reste inchangée quelle que soit la métrique utilisée, à 54 %.
 
-In the period from 2020 to 2022, we saw that mobile web performance measured by CWV with FID was improving faster than desktop one, and the gap between them was closing, reaching just 5% in 2022. As CWV with INP chart shows, in 2024, the websites on the desktop performed 11% better than on mobile, so the introduction of the INP shows that the gap is much bigger.
+Entre 2020 et 2022, nous avions constaté que les performances web des appareils mobiles mesurées par les CWV avec le FID progressaient plus rapidement que celles des appareils de bureau, réduisant l’écart à seulement 5 % en 2022. Comme le montre le graphique des CWV avec l’INP sur l’année 2024, les sites sur appareils de bureau ont une performance 11 % supérieure à celle des sites mobiles, ce qui met en évidence un écart beaucoup plus important avec l’introduction de l’INP.
 
 {{ figure_markup(
   image="good-core-web-vitals-inp-devices-years.png",
-  caption="The percent of websites having good CWV, segmented by rank and desktop vs mobile.",
-  description="Bar chart showing the percentage of websites with good CWV (Core Web Vitals) performance by rank for desktop and mobile. For the top 1,000 websites, 40% of mobile websites have good CWV, compared to 54% of desktop websites. In the top 10,000, 33% of mobile websites have good CWV, while 46% of desktop websites do. In the top 100,000, 31% of mobile websites and 43% of desktop websites have good CWV. In the top 1,000,000, 36% of mobile websites have good CWV, compared to 48% of desktop websites. For websites ranked 10,000,000 and beyond, 44% of mobile websites and 43% of desktop websites achieve good CWV.",
+  caption="Pourcentage de sites ayant de bons CWV, segmenté par rang et par type d’appareil (bureau vs mobile)",
+  description="Graphique en barres montrant le pourcentage de sites ayant de bonnes performances CWV (Core Web Vitals) par rang pour mobile et ordinateur de bureau. Parmi les 1 000 sites les plus populaires, 40 % des sites mobiles ont de bons CWV, contre 54 % des sites sur ordinateur de bureau. Parmi les 10 000 premiers sites, 33 % des sites mobiles présentent de bons CWV, tandis que 46 % des sites sur ordinateur de bureau en obtiennent. Dans le classement des 100 000 premiers, 31 % des sites mobiles et 43 % des sites sur ordinateur de bureau ont de bons CWV. Pour les 1 000 000 premiers sites, 36 % des sites mobiles affichent de bons CWV, contre 48 % pour les sites sur ordinateur de bureau. Au-delà des 10 000 000 premiers sites, 44 % des sites mobiles et 43 % des sites sur ordinateur de bureau atteignent de bons résultats CWV.",
   chart_url="https://docs.google.com/spreadsheets/d/e/2PACX-1vRiPhLGlGUxomTx_5nC9ahQDRxZBmJXMT3Q0Z2z4Y2pPVqC9kzjsUjRk4hz-JZzaPBjVxyaf7Gtqh93/pubchart?oid=1814767865&format=interactive",
   sheets_gid="355582610",
   sql_file="web_vitals_by_rank_and_device.sql"
   )
 }}
 
-CWV with INP shows a new tendency when analyzing websites by rank. Previously, the most popular websites [tended to have the best CWV experience](../2022/performance#fig-2), however, this year's statistics shows the opposite: 40% of 1000 most popular websites on mobile have good CWV which is lower than total website CWV of 43%.
+Les CWV avec l’INP montrent une nouvelle tendance lorsqu’on analyse les sites par rang. Auparavant, les sites les plus populaires [avaient tendance à offrir la meilleure expérience CWV](../2022/performance#fig-2). Cependant, les statistiques de cette année montrent l’inverse : 40 % des 1000 sites mobiles les plus populaires ont de bons CWV, un pourcentage inférieur à la moyenne globale des sites mobiles avec de bons CWV avec 43 %.
 
 {{ figure_markup(
   image="good-core-web-vitals-fid-vs-inp.png",
-  caption="Percent point change of websites having good CWV from FID to INP, by technology.",
-  description="Bar chart showing the percentage points of websites with new mobile CWV failures due to INP across various platforms and technologies. 1C-Bitrix has the highest percentage of new failures at 19%, followed by Next.js at 10%, and Emotion at 8%. Other platforms such as WordPress, React, Vue.js, and Drupal show smaller decreases, ranging from 2% to 5%. The chart also displays a range of smaller decreases for various technologies, including Handlebars, Backbone.js, Squarespace, and Angular, all seeing decreases of around 2% to 5%.",
+  caption="Évolution en points de pourcentage des sites ayant de bons CWV lors du passage de la métrique FID à l'INP, par technologie.",
+  description="Graphique en barres montrant les points de pourcentage de nouveaux échecs CWV mobiles dus à l’INP sur différentes plateformes et technologies. 1C-Bitrix enregistre le pourcentage le plus élevé de nouveaux échecs avec 19 %, suivi de Next.js à 10 % et d’Emotion à 8 %. D’autres plateformes, comme WordPress, React, Vue.js et Drupal, présentent des baisses plus modestes, allant de 2 % à 5 %. Le graphique met également en évidence une série de baisses similaires pour d’autres technologies, notamment Handlebars, Backbone.js, Squarespace et Angular, toutes autour de 2 % à 5 %.",
   chart_url="https://docs.google.com/spreadsheets/d/e/2PACX-1vRiPhLGlGUxomTx_5nC9ahQDRxZBmJXMT3Q0Z2z4Y2pPVqC9kzjsUjRk4hz-JZzaPBjVxyaf7Gtqh93/pubchart?oid=655066315&format=interactive",
   sheets_gid="869409419",
   sql_file="web_vitals_by_technology.sql",
@@ -87,23 +87,25 @@ CWV with INP shows a new tendency when analyzing websites by rank. Previously, t
   )
 }}
 
-As mentioned earlier, the CWV scores have decreased due to the switch of the INP metric. We investigated how different technologies have been affected by this shift. The diagram above illustrates the percent point drop in the percentage of websites with good CWV across various technologies after the INP was introduced.
+Comme mentionné précédemment, les scores CWV ont diminué en raison du passage à la métrique INP. Nous avons étudié comment différentes technologies ont été impactées par ce changement. Le diagramme ci-dessus illustre la baisse en points de pourcentage du nombre de sites avec de bons CWV selon diverses technologies après l’introduction de l’INP.
 
-Several technologies were significantly impacted, including a 19% drop for 1C-Bitrix (a popular CMS in Central Asia), a 10% drop for Next.js (a React-based framework), and an 8% drop for Emotion (a CSS-in-JS tool). We can't be entirely certain that the decline in CWV scores is solely due to the technology used. Next.js has server-side rendering (SSR) and static site generation (SSG) features, which should theoretically enhance INP, but it has still seen a significant decline. As Next.js is based on React, many websites rely on client-side rendering, which can negatively impact INP. This could serve as a reminder for developers to leverage the SSR and SSG capabilities of the framework they use.
+Certaines technologies ont été particulièrement affectées, avec une baisse de 19 % pour 1C-Bitrix (un CMS populaire en Asie centrale), une baisse de 10 % pour Next.js (un framework basé sur React) et une baisse de 8 % pour Emotion (un outil CSS-in-JS). Il est difficile d’affirmer que le déclin des scores CWV est uniquement dû à la technologie utilisée. Next.js, qui propose des fonctionnalités de rendu côté serveur (SSR) et de génération de sites statiques (SSG), devrait théoriquement améliorer l’INP, mais a tout de même connu une baisse significative. Comme Next.js repose sur React, de nombreux sites utilisent le rendu côté client, ce qui peut nuire à l’INP. Cela rappelle aux développeurs l’importance de tirer parti des capacités SSR et SSG des frameworks qu’ils utilisent.
 
-As of this year, secondary pages are available to compare with homepage data.
+Cette année, des données sur les pages secondaires sont disponibles pour comparaison avec celles des pages d’accueil.
+
+À partir de cette année, les données des pages secondaires sont disponibles pour être comparées à celles des pages d’accueil.
 
 {{ figure_markup(
   image="good-core-web-vitals-home-secondary-page.png",
-  caption="The percent of websites having good CWV, segmented by page type.",
-  description="Bar chart showing the percentage of pages with good CWV (Core Web Vitals) for home pages and secondary pages on desktop and mobile. For home pages, 45% of desktop pages have good CWV, while 38% of mobile pages achieve good CWV. For secondary pages, 61% of desktop pages have good CWV, compared to 51% of mobile pages.",
+  caption="Le pourcentage de sites ayant de bons CWV, segmenté par type de page.",
+  description="Graphique en barres montrant le pourcentage de pages avec de bons CWV (Core Web Vitals) pour les pages d’accueil et les pages secondaires, sur ordinateur de bureau et mobile. Pour les pages d’accueil, 45 % des pages sur ordinateur de bureau présentent de bons CWV, tandis que 38 % des pages mobiles obtiennent de bons résultats. Pour les pages secondaires, 61 % des pages sur ordinateur de bureau affichent de bons CWV, contre 51 % pour les pages mobiles.",
   chart_url="https://docs.google.com/spreadsheets/d/e/2PACX-1vRiPhLGlGUxomTx_5nC9ahQDRxZBmJXMT3Q0Z2z4Y2pPVqC9kzjsUjRk4hz-JZzaPBjVxyaf7Gtqh93/pubchart?oid=1034225442&format=interactive",
   sheets_gid="1159394005",
   sql_file="web_vitals_by_device_secondary_pages.sql"
   )
 }}
 
-Secondary pages demonstrate significantly better CWV results than home pages. The percentage of the desktop secondary pages with good CWV is by 14 percentage points better than for home pages. For mobile websites, the difference is 13 percentage points. By looking at CWV data only, it is hard to identify what kind of performance experience is better. We will explore these aspects—layout shift, loading, and interactivity—in the corresponding sections.
+Les pages secondaires affichent des résultats CWV nettement meilleurs que les pages d’accueil. Le pourcentage de pages secondaires sur appareils de bureau avec de bons CWV est supérieur de 14 points à celui des pages d’accueil. Pour les sites mobiles, la différence est de 13 points. En se basant uniquement sur les données CWV, il est difficile de déterminer quelle expérience de performance est meilleure. Nous examinerons ces aspects, à savoir décalage de mise en page, chargement et interactivité, dans les sections correspondantes.
 
 ## Loading Speed
 
