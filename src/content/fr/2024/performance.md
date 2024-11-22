@@ -35,13 +35,13 @@ Quoi de neuf cette année ?
 - Les données sur les [Long Animation Frames (LoAF)](https://developer.chrome.com/docs/web-platform/long-animation-frames) sont disponibles pour la première fois, offrant de nouvelles perspectives sur les causes d’un INP dégradé.
 - Cette année, le chapitre sur la performance inclut également une analyse des données pour les pages secondaires, en plus des pages d’accueil. Cela nous permet de comparer les performances des pages d’accueil avec celles des pages secondaires.
 
-### Notes on Data Sources
+### Notes sur les sources de données
 
-The HTTP Archive contains only lab performance data. In other words, it is data from a single website load event. This is useful but limited if we want to understand how users experience performance.
+Le HTTP Archive contient uniquement des données de performance de laboratoire. En d'autres termes, il s'agit de données provenant d'un unique contexte de chargement d'un site web. Ces données sont utiles, mais limitées si l'on souhaite comprendre comment les utilisateurs perçoivent réellement les performances.
 
-Thus, in addition to the data HTTP Archive, most of this report is based on real user data from the [Chrome User Experience Report (CrUX)](https://developer.chrome.com/docs/crux). Note that while Chrome is the most widely used browser worldwide, it doesn't reflect performance across all browsers and all regions of the world.
+Ainsi, en complément des données du HTTP Archive, la majeure partie de ce rapport repose sur des données réelles d’utilisateurs issues du [Chrome User Experience Report (CrUX)](https://developer.chrome.com/docs/crux). Il convient de noter que, bien que Chrome soit le navigateur le plus utilisé dans le monde, il ne reflète pas les performances sur tous les navigateurs ni dans toutes les régions du globe.
 
-CrUX is a great source of data, but it doesn't contain certain metrics like LCP and INP sub-parts, as well as Long Animation Frames. Luckily, the performance monitoring platform <a hreflang="en" href="https://www.rumvision.com/">RUMvision</a> has provided us with this data for the period from 1st January to 6th October 2024. Compared to The HTTP Archive, RUMvision tests a smaller amount of websites, which is why the results for the same metrics might be slightly different.
+CrUX est une excellente source de données, mais elle ne contient pas certaines métriques, comme les sous-composantes de LCP et INP, ainsi que les Long Animation Frames. Heureusement, la plateforme de surveillance des performances <a hreflang="en" href="https://www.rumvision.com/">RUMvision</a> nous a fourni ces données pour la période allant du 1er janvier au 6 octobre 2024. Comparée au HTTP Archive, RUMvision teste un plus petit nombre de sites web, ce qui explique pourquoi les résultats pour les mêmes métriques peuvent légèrement différer.
 
 ## Core Web Vitals
 
