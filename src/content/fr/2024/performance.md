@@ -1,23 +1,23 @@
 ---
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Performance
-description: Performance chapter of the 2024 Web Almanac covering Core Web Vitals, with deep dives into the Largest Contentful Paint, Cumulative Layout Shift, and Interaction to Next Paint metrics and their diagnostics.
-hero_alt: Hero image of Web Almanac characters images to a web page, while another Web Almanac character times them with a stopwatch.
+description: Chapitre Performance du Web Almanac 2024, consacré aux Core Web Vitals, avec des analyses approfondies sur les métriques Largest Contentful Paint, Cumulative Layout Shift et Interaction to Next Paint, ainsi que leurs diagnostics.
+hero_alt: Illustration des personnages du Web Almanac ajoutant des images à une page web, pendant qu'un autre personnage les chronomètres.
 authors: [imeugenia, ines-akrap]
 reviewers: [rviscomi, siakaramalegos]
 editors: [Cherry]
 analysts: [kevinfarrugia, guaca]
-translators: []
-ines-akrap_bio: Ines Akrap is a Frontend Software Engineer passionate about optimizing websites to be fast, sustainable, and provide the best user experience for every user. She works in Storyblok as a Solutions Engineer. She enjoys sharing her knowledge through talks, podcasts, workshops, and courses.
-imeugenia_bio: Jevgenija is a frontend engineer and tech event oranizer who is passionate about web performance and developer experience. She works at <a hreflang="en" href="https://www.limehome.com/en/">Limehome</a>—a digital first hotel brand. She ran a Google Developer Group in Latvia and Berlin for several years.
+translators: [amineatia]
+ines-akrap_bio: Ines Akrap est une ingénieure en développement frontend, passionnée par l'optimisation des sites web pour qu'ils soient rapides, durables et offrent la meilleure expérience utilisateur à tous. Elle travaille chez Storyblok en tant que Solutions Engineer. Elle aime partager ses connaissances à travers des conférences, des podcasts, des ateliers et des cours.
+imeugenia_bio: Jevgenija est ingénieure frontend et organisatrice d'événements tech, passionnée par la performance web et l'expérience développeur. Elle travaille chez <a hreflang="en" href="https://www.limehome.com/en/">Limehome</a>, une marque hôtelière digitale. Elle a dirigé un Google Developer Group en Lettonie et à Berlin pendant plusieurs années.
 results: https://docs.google.com/spreadsheets/d/15038wEIoqY53Y_kR8U6QWM-PBO31ZySQGi147ABTNBc/
-featured_quote: Web performance is improving across loading times, interactivity, and visual stability. However, the gap between mobile and desktop experiences remains significant.
+featured_quote: La performance web s'améliore en termes de temps de chargement, d'interactivité et de stabilité visuelle. Cependant, l'écart entre les expériences mobiles et desktop reste important.
 featured_stat_1: 43%
-featured_stat_label_1: of mobile websites have good CWV scores when measured with INP, which is 5% lower than when measured with FID.
+featured_stat_label_1: des sites mobiles affichent de bons scores CWV lorsqu'ils sont mesurés avec l'INP, soit 5 % de moins que lorsqu'ils sont mesurés avec le FID.
 featured_stat_2: 15%
-featured_stat_label_2: of websites still use unnecessary lazy-loading on LCP elements.
+featured_stat_label_2: des sites web continuent d'appliquer un lazy-loading non justifié sur les éléments LCP.
 featured_stat_3: 13%
-featured_stat_label_3: the percentage by which good CWV scores are higher on secondary pages compared to homepages for mobile websites.
+featured_stat_label_3: correspond au pourcentage par lequel les scores CWV sont meilleurs sur les pages secondaires comparées aux pages d’accueil des sites mobiles.
 doi: 10.5281/zenodo.14065738
 ---
 
