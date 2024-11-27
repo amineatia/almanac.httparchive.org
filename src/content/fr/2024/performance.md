@@ -97,7 +97,7 @@ Cette année, des données sur les pages secondaires sont disponibles pour compa
 
 {{ figure_markup(
   image="good-core-web-vitals-home-secondary-page.png",
-  caption="Le pourcentage de sites ayant de bons CWV, segmenté par type de page.",
+  caption="Pourcentage de sites ayant de bons CWV, segmenté par type de page.",
   description="Graphique en barres montrant le pourcentage de pages avec de bons CWV (Core Web Vitals) pour les pages d’accueil et les pages secondaires, sur ordinateur de bureau et mobile. Pour les pages d’accueil, 45 % des pages sur ordinateur de bureau présentent de bons CWV, tandis que 38 % des pages mobiles obtiennent de bons résultats. Pour les pages secondaires, 61 % des pages sur ordinateur de bureau affichent de bons CWV, contre 51 % pour les pages mobiles.",
   chart_url="https://docs.google.com/spreadsheets/d/e/2PACX-1vRiPhLGlGUxomTx_5nC9ahQDRxZBmJXMT3Q0Z2z4Y2pPVqC9kzjsUjRk4hz-JZzaPBjVxyaf7Gtqh93/pubchart?oid=1034225442&format=interactive",
   sheets_gid="1159394005",
@@ -113,19 +113,19 @@ On parle souvent de la vitesse de chargement d’un site web comme d’une seule
 
 ### Time to First Byte (TTFB)
 
-[Time to First Byte](https://web.dev/articles/ttfb) (TTFB) measures the time from when a user initiates loading a page until the browser receives the first byte of the response. It includes phases like redirect time, DNS lookup, connection and TLS negotiation, and request processing. Reducing latency in connection and server response time can improve TTFB. 800 milliseconds is considered the threshold for good TTFB—with [some caveats!](https://web.dev/articles/ttfb#good-ttfb-score)
+[Time to First Byte](https://web.dev/articles/ttfb) (TTFB) mesure le temps écoulé entre le moment où un utilisateur commence à charger une page et celui où le navigateur reçoit le premier octet envoyé en réponse. Cela inclut des phases comme le temps de redirection, la résolution DNS, la connexion et la négociation TLS, ainsi que le traitement de la requête. Réduire la latence dans la connexion et le temps de réponse du serveur peut améliorer le TTFB. 800 millisecondes est considéré comme le seuil pour un bon TTFB, avec [quelques nuances !](https://web.dev/articles/ttfb#good-ttfb-score)
 
 {{ figure_markup(
   image="good-time-to-first-byte.png",
-  caption="The percent of websites having good TTFB, segmented by device and year.",
-  description="Stacked bar chart showing TTFB (Time to First Byte) performance for mobile websites from 2020 to 2024, categorized as good, needs improvement, and poor. In 2024, 42% of mobile websites had good TTFB, 40% needed improvement, and 19% were poor. In 2023, 41% were good, 41% needed improvement, and 19% were poor. In 2022, 40% of websites had good TTFB, 41% needed improvement, and 19% were poor. In 2021, 39% were good, 42% needed improvement, and 18% were poor. In 2020, 41% of mobile websites had good TTFB, 41% needed improvement, and 18% were poor.",
+  caption="Pourcentage de sites ayant un bon TTFB, segmenté par type d’appareil et par année.",
+  description="Graphique en barres empilées montrant les performances du TTFB (Time to First Byte) pour les sites mobiles de 2020 à 2024, classées en bon, à améliorer et mauvais. En 2024, 42 % des sites mobiles avaient un bon TTFB, 40 % nécessitaient des améliorations et 19 % étaient mauvais. En 2023, 41 % étaient bons, 41 % nécessitaient des améliorations et 19 % étaient mauvais. En 2022, 40 % des sites avaient un bon TTFB, 41 % nécessitaient des améliorations et 19 % étaient mauvais. En 2021, 39 % étaient bons, 42 % nécessitaient des améliorations et 18 % étaient mauvais. En 2020, 41 % des sites mobiles avaient un bon TTFB, 41 % nécessitaient des améliorations et 18 % étaient mauvais.",
   chart_url="https://docs.google.com/spreadsheets/d/e/2PACX-1vRiPhLGlGUxomTx_5nC9ahQDRxZBmJXMT3Q0Z2z4Y2pPVqC9kzjsUjRk4hz-JZzaPBjVxyaf7Gtqh93/pubchart?oid=1925312055&format=interactive",
   sheets_gid="1535582002",
   sql_file="web_vitals_by_device.sql"
   )
 }}
 
-Over the past five years, the percentage of mobile web pages with good TTFB has remained stable, from 41% in 2021 to 42% in 2024. The percentage of pages that need TTFB improvements has decreased by 1%, and unfortunately, the percentage of pages with poor TTFB remains the same. Since this metric has not changed significantly, we can conclude that there have been no major improvements in connection speed or backend latency.
+Au cours des cinq dernières années, le pourcentage de pages web mobiles avec un bon TTFB est resté stable, passant de 41 % en 2021 à 42 % en 2024. Le pourcentage de pages nécessitant des améliorations du TTFB a diminué de 1 %, mais malheureusement, le pourcentage de pages avec un TTFB médiocre reste inchangé. Étant donné que cette métrique n'a pas évolué de manière significative, nous pouvons en conclure qu'il n'y a pas eu d'améliorations majeures en termes de vitesse de connexion ou de latence côté serveur.
 
 ### First Contentful Paint (FCP)
 
