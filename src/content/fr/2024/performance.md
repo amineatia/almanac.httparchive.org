@@ -107,9 +107,9 @@ Cette année, des données sur les pages secondaires sont disponibles pour compa
 
 Les pages secondaires affichent des résultats CWV nettement meilleurs que les pages d’accueil. Le pourcentage de pages secondaires sur appareils de bureau avec de bons CWV est supérieur de 14 points à celui des pages d’accueil. Pour les sites mobiles, la différence est de 13 points. En se basant uniquement sur les données CWV, il est difficile de déterminer quelle expérience de performance est meilleure. Nous examinerons ces aspects, à savoir décalage de mise en page, chargement et interactivité, dans les sections correspondantes.
 
-## Loading Speed
+## Vitesse de chargement
 
-People often refer to website loading speed as a single metric, but in fact, the loading experience is a multi-stage process. No single metric fully captures all aspects of what makes up loading speed. Every stage has an impact on the speed of a website.
+On parle souvent de la vitesse de chargement d’un site web comme d’une seule métrique, mais en réalité, l’expérience de chargement est un processus en plusieurs étapes. Aucune métrique unique ne reflète pleinement tous les aspects qui composent la vitesse de chargement. Chaque étape influence la rapidité d’un site web.
 
 ### Time to First Byte (TTFB)
 
