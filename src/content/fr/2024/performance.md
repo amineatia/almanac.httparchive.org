@@ -113,7 +113,7 @@ On parle souvent de la vitesse de chargement d’un site web comme d’une seule
 
 ### Time to First Byte (TTFB)
 
-[Time to First Byte](https://web.dev/articles/ttfb) (TTFB) mesure le temps écoulé entre le moment où un utilisateur commence à charger une page et celui où le navigateur reçoit le premier octet envoyé en réponse. Cela inclut des phases comme le temps de redirection, la résolution DNS, la connexion et la négociation TLS, ainsi que le traitement de la requête. Réduire la latence dans la connexion et le temps de réponse du serveur peut améliorer le TTFB. 800 millisecondes est considéré comme le seuil pour un bon TTFB, avec [quelques nuances !](https://web.dev/articles/ttfb#good-ttfb-score)
+Le [Time to First Byte](https://web.dev/articles/ttfb) (TTFB) mesure le temps écoulé entre le moment où un utilisateur commence à charger une page et celui où le navigateur reçoit le premier octet envoyé en réponse. Cela inclut des phases comme le temps de redirection, la résolution DNS, la connexion et la négociation TLS, ainsi que le traitement de la requête. Réduire la latence dans la connexion et le temps de réponse du serveur peut améliorer le TTFB. 800 millisecondes est considéré comme le seuil pour un bon TTFB, avec [quelques nuances !](https://web.dev/articles/ttfb#good-ttfb-score)
 
 {{ figure_markup(
   image="good-time-to-first-byte.png",
@@ -129,21 +129,21 @@ Au cours des cinq dernières années, le pourcentage de pages web mobiles avec u
 
 ### First Contentful Paint (FCP)
 
-[First Contentful Paint (FCP)](https://web.dev/articles/fcp) is a performance metric that helps indicate how quickly users can start seeing content. It measures the time from when a user first requests a page until the first piece of content is rendered on the screen. A good FCP should be under 1.8 seconds.
+Le [First Contentful Paint (FCP)](https://web.dev/articles/fcp) est une métrique de performance qui indique à quelle vitesse les utilisateurs peuvent commencer à voir le contenu. Elle mesure le temps écoulé entre la première requête d’une page par un utilisateur et l’affichage du premier élément de contenu à l’écran. Un bon FCP devrait être inférieur à 1,8 seconde.
 
 {{ figure_markup(
   image="good-first-contentful-paint-2024.png",
-  caption="The percent of websites having good FCP, segmented by device and year.",
-  description="Bar chart showing the percentage of websites with good FCP (First Contentful Paint) performance by device over time. In July 2021, 60% of desktop websites had good FCP, compared to 38% of mobile websites. By June 2022, 64% of desktop websites and 49% of mobile websites had good FCP. In September 2023, 63% of desktop websites had good FCP, while 47% of mobile websites did. By June 2024, the percentage increased to 68% for desktop websites and 51% for mobile websites.",
+  caption="Pourcentage de sites ayant un bon FCP, segmenté par appareil et par année.",
+  description="Graphique en barres montrant le pourcentage de sites ayant de bonnes performances FCP (First Contentful Paint) selon le type d’appareil au fil du temps. En juillet 2021, 60 % des sites sur ordinateur de bureau avaient un bon FCP, contre 38 % des sites mobiles. En juin 2022, 64 % des sites sur ordinateur de bureau et 49 % des sites mobiles avaient un bon FCP. En septembre 2023, 63 % des sites sur ordinateur de bureau affichaient un bon FCP, tandis que 47 % des sites mobiles en faisaient autant. En juin 2024, ce pourcentage est passé à 68 % pour les sites sur ordinateur de bureau et à 51 % pour les sites mobiles.",
   chart_url="https://docs.google.com/spreadsheets/d/e/2PACX-1vRiPhLGlGUxomTx_5nC9ahQDRxZBmJXMT3Q0Z2z4Y2pPVqC9kzjsUjRk4hz-JZzaPBjVxyaf7Gtqh93/pubchart?oid=1058680176&format=interactive",
   sheets_gid="1535582002",
   sql_file="web_vitals_by_device.sql"
   )
 }}
 
-FCP has shown improvements over the past few years. Although there was a slight decline in 2023, the metric recovered in 2024, reaching 68% for desktop and 51% for mobile websites. Overall, this reflects a positive trend in how fast the first content is loaded. Taking into account that the TTFB metric remained mostly unchanged, FCP improvements might be driven by client-side rendering rather than server-side optimizations.
+Le FCP a montré des améliorations au cours des dernières années. Bien qu'il y ait eu une légère baisse en 2023, la métrique s'est redressée en 2024, atteignant 68 % pour les sites sur ordinateur de bureau et 51 % pour les sites mobiles. Dans l’ensemble, cela reflète une tendance positive dans la rapidité de chargement du premier contenu. Étant donné que la métrique TTFB est restée globalement inchangée, les améliorations du FCP pourraient être attribuées au rendu côté client plutôt qu’à des optimisations côté serveur.
 
-Interestingly, website performance is not the only factor that influences FCP. In the research <a hreflang="en" href="https://www.debugbear.com/blog/chrome-extension-performance-2021#impact-on-page-rendering-times">How Do Chrome Extensions Impact Browser Performance?</a> Matt Zeunert found that browser extensions can significantly affect page loading times. Many extensions start running their code as soon as a page starts loading, delaying the first contentful paint. For instance, some extensions can increase FCP from 100 milliseconds to 250 milliseconds.
+Fait intéressant, la performance des sites web n'est pas le seul facteur qui influence le FCP. Dans l’étude <a hreflang="en" href="https://www.debugbear.com/blog/chrome-extension-performance-2021#impact-on-page-rendering-times">How Do Chrome Extensions Impact Browser Performance?</a>, Matt Zeunert a découvert que les extensions de navigateur peuvent affecter de manière significative les temps de chargement des pages. De nombreuses extensions commencent à exécuter leur code dès le début du chargement d’une page, retardant ainsi le First Contentful Paint. Par exemple, certaines extensions peuvent augmenter le FCP de 100 millisecondes à 250 millisecondes.
 
 ### Largest Contentful Paint (LCP)
 
